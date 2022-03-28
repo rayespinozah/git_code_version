@@ -1,0 +1,321 @@
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global user.name "ray.espinoza"
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global user.email "respinozahe@alumni.unav.es"
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git --version
+git version 2.35.1
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global --list
+user.name=ray.espinoza
+user.email=respinozahe@alumni.unav.es
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/rayespinoza/Desktop/intro_git/.git/
+(base) rayespinoza@Rays-MacBook-Pro intro_git % ls
+(base) rayespinoza@Rays-MacBook-Pro intro_git % ls             
+(base) rayespinoza@Rays-MacBook-Pro intro_git % LS
+README.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % ls
+README.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git add README.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   README.md
+
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git commit -m "añadido el fichero en el proyecto"
+[master (root-commit) 68e84e6] añadido el fichero en el proyecto
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9 (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+nothing to commit, working tree clean
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+nothing to commit, working tree clean
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git commit -am "Incorpoada la descripción"
+[master fed90e4] Incorpoada la descripción
+ 1 file changed, 2 insertions(+)
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+nothing to commit, working tree clean
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log   
+commit fed90e4070734870298028b3222a0791963f3b02 (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:52:53 2022 +0100
+
+    Incorpoada la descripción
+
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git commit --amend -m "incorporado detalle en el README"
+[master 42f0da4] incorporado detalle en el README
+ Date: Mon Mar 21 19:52:53 2022 +0100
+ 1 file changed, 2 insertions(+)
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log
+commit 42f0da4b2927c051ba2a0980b992c40acb8a9825 (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:52:53 2022 +0100
+
+    incorporado detalle en el README
+
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git add..
+git: 'add..' is not a git command. See 'git --help'.
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git add .
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status                     
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   DATAPREP/README.md
+	new file:   EDA/README.md
+
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git commit -am "Nuevas carpetas"
+[master 821fd3a] Nuevas carpetas
+ 2 files changed, 1 insertion(+)
+ create mode 100644 DATAPREP/README.md
+ create mode 100644 EDA/README.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+nothing to commit, working tree clean
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log
+commit 821fd3aa136b57abccb1d5ed2cbbf5d9cc1f744e (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:00:57 2022 +0100
+
+    Nuevas carpetas
+
+commit 42f0da4b2927c051ba2a0980b992c40acb8a9825
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:52:53 2022 +0100
+
+    incorporado detalle en el README
+
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git reset --hard 821fd3aa136b57abccb1d5ed2cbbf5d9cc1f744e
+HEAD is now at 821fd3a Nuevas carpetas
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+nothing to commit, working tree clean
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log
+commit 821fd3aa136b57abccb1d5ed2cbbf5d9cc1f744e (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:00:57 2022 +0100
+
+    Nuevas carpetas
+
+commit 42f0da4b2927c051ba2a0980b992c40acb8a9825
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:52:53 2022 +0100
+
+    incorporado detalle en el README
+
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git add .
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git commit -m "Nuevos ficheros para predict y train"
+[master f15f18b] Nuevos ficheros para predict y train
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 PREDICT/README.md
+ create mode 100644 TRAIN/README.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+nothing to commit, working tree clean
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log
+commit f15f18b8f921776a3b9a7aaf8f2f794837451540 (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:03:41 2022 +0100
+
+    Nuevos ficheros para predict y train
+
+commit 821fd3aa136b57abccb1d5ed2cbbf5d9cc1f744e
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:00:57 2022 +0100
+
+    Nuevas carpetas
+
+commit 42f0da4b2927c051ba2a0980b992c40acb8a9825
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:52:53 2022 +0100
+
+    incorporado detalle en el README
+
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git reflog
+f15f18b (HEAD -> master) HEAD@{0}: commit: Nuevos ficheros para predict y train
+821fd3a HEAD@{1}: reset: moving to 821fd3aa136b57abccb1d5ed2cbbf5d9cc1f744e
+821fd3a HEAD@{2}: commit: Nuevas carpetas
+42f0da4 HEAD@{3}: commit (amend): incorporado detalle en el README
+fed90e4 HEAD@{4}: commit: Incorpoada la descripción
+68e84e6 HEAD@{5}: commit (initial): añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git reset --hard HEAD@{0}
+HEAD is now at f15f18b Nuevos ficheros para predict y train
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log
+commit f15f18b8f921776a3b9a7aaf8f2f794837451540 (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:03:41 2022 +0100
+
+    Nuevos ficheros para predict y train
+
+commit 821fd3aa136b57abccb1d5ed2cbbf5d9cc1f744e
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:00:57 2022 +0100
+
+    Nuevas carpetas
+
+commit 42f0da4b2927c051ba2a0980b992c40acb8a9825
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:52:53 2022 +0100
+
+    incorporado detalle en el README
+
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log --oneline --decorate --all --graph
+* f15f18b (HEAD -> master) Nuevos ficheros para predict y train
+* 821fd3a Nuevas carpetas
+* 42f0da4 incorporado detalle en el README
+* 68e84e6 añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global alias.lg "log --oneline --decorate --all --graph"
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git lg
+* f15f18b (HEAD -> master) Nuevos ficheros para predict y train
+* 821fd3a Nuevas carpetas
+* 42f0da4 incorporado detalle en el README
+* 68e84e6 añadido el fichero en el proyecto
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git status
+On branch master
+nothing to commit, working tree clean
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global alias.lg "status -s -b"
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global --list
+user.name=ray.espinoza
+user.email=respinozahe@alumni.unav.es
+alias.lg=status -s -b
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global alias.lg "log --oneline --decorate --all --graph"
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global alias.s "status -s -b"               
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git config --global --list
+user.name=ray.espinoza
+user.email=respinozahe@alumni.unav.es
+alias.lg=log --oneline --decorate --all --graph
+alias.s=status -s -b
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git s
+## master
+ M DATAPREP/README.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git checkout DATAPREP/README.md
+Updated 1 path from the index
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git s                          
+## master
+?? DATAPREP/dataprep.py
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git clean -f DATAPREP/dataprep.py
+Removing DATAPREP/dataprep.py
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git s
+## master
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git s
+## master
+ D DATAPREP/README.md
+?? DATAPREP/DATAPREP.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git add .
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git s
+## master
+R  DATAPREP/README.md -> DATAPREP/DATAPREP.md
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git commit -m "cambie el nombre README"
+[master 076fff0] cambie el nombre README
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename DATAPREP/{README.md => DATAPREP.md} (100%)
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git s
+## master
+(base) rayespinoza@Rays-MacBook-Pro intro_git % git log
+commit 076fff0b8db388f23a31ee54a3ea0604f4d72a76 (HEAD -> master)
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:16:53 2022 +0100
+
+    cambie el nombre README
+
+commit f15f18b8f921776a3b9a7aaf8f2f794837451540
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:03:41 2022 +0100
+
+    Nuevos ficheros para predict y train
+
+commit 821fd3aa136b57abccb1d5ed2cbbf5d9cc1f744e
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 20:00:57 2022 +0100
+
+    Nuevas carpetas
+
+commit 42f0da4b2927c051ba2a0980b992c40acb8a9825
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:52:53 2022 +0100
+
+    incorporado detalle en el README
+
+commit 68e84e65646a7c6b5c03e59cbc0f4320d8745fc9
+Author: ray.espinoza <respinozahe@alumni.unav.es>
+Date:   Mon Mar 21 19:47:18 2022 +0100
+
+    añadido el fichero en el proyecto
+(END)
