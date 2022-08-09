@@ -1,3 +1,3 @@
-# PROYECTO DE DATA SCIENCE
+# PROYECTO DATA SCIENCE
 
 Data Science Projects
